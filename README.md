@@ -5,3 +5,5 @@ This repository contains code for an interactive information web app, created fo
 Hi! I'm Vidhya Narayanan, one of the group members. here is my push to this repository.
 
 Hi! This is Muyun. Here is my push to the repo.
+
+Hi! This is Simon! Hello there!
