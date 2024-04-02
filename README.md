@@ -9,5 +9,3 @@ Hi! This is Muyun. Here is my push to the repo.
 Hi! This is Simon! Hello there!
 
 Hi! I'm Haobo Jiang. Here's my push to this repo!
-
-11
