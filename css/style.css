@@ -14,16 +14,16 @@ header {
     font-weight: bold;
     text-decoration:red dotted underline;
 } 
-.problem-description {
 
-}
+section h2 {
+    color: #793030;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
 
-.website-description {
-}
-
-.functionality-walkthrough {
-}
-
-.external-resources {
-    
+img {
+    max-height: 50%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
