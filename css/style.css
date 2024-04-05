@@ -1,6 +1,7 @@
 body {
     background-color: #eae7e7;
     line-height: 1.7;
+    margin: 2em;
 }
 
 header {
@@ -27,3 +28,8 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+body p {
+    text-indent: 2em;
+}
+
