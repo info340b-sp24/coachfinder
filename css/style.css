@@ -1,5 +1,6 @@
 body {
-    background-color: #fdc4c4;
+    background-color: #eae7e7;
+    line-height: 1.7;
 }
 
 header {
@@ -9,7 +10,10 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-
+.functionality-emphasize {
+    font-weight: bold;
+    text-decoration:red dotted underline;
+} 
 .problem-description {
 
 }
