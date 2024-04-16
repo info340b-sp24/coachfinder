@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Trainer Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CoachFinder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search"><span>🔍</span> Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#settings"><span>⚙️</span> Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appointments"><span>📅</span> Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#messages"><span>💬</span> Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mt-4">Update Trainer Profile</h1>
+        <div class="text-center my-4">
+            <div class="d-flex justify-content-center align-items-center" style="width: 200px; height: 200px; overflow: hidden; border-radius: 50%;">
+                <img src="profile-picture-placeholder.png" alt="Profile Picture" class="img-fluid">
+            </div>
+            <div class="mt-2">
+                <input type="file" class="form-control" id="profilePicture" accept="image/*">
+            </div>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="specialty" class="form-label">Specialty</label>
+                <input type="text" class="form-control" id="specialty" placeholder="Enter your specialty">
+            </div>
+            <div class="mb-3">
+                <label for="experience" class="form-label">Years of Experience</label>
+                <input type="number" class="form-control" id="experience" placeholder="Enter years of experience">
+            </div>
+            <div class="mb-3">
+                <label for="rate" class="form-label">Rate (per session)</label>
+                <input type="number" class="form-control" id="rate" placeholder="Enter your rate per session">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Availability</label>
+                <table class="table table-dark availability-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7:00 AM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-7"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-7"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-7"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-7"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-7"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-7"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-7"></td>
+                        </tr>
+                        <tr>
+                            <td>8:00 AM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>9:00 AM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>10:00 AM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>11:00 AM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>12:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>1:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>2:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>3:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>4:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>5:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>6:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                        <tr>
+                            <td>7:00 PM</td>
+                            <td><input type="checkbox" class="form-check-input" name="mon-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="tue-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="wed-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="thu-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="fri-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sat-8"></td>
+                            <td><input type="checkbox" class="form-check-input" name="sun-8"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
