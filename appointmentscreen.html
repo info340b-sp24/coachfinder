@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Greeting style */
+        .greeting {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Layout for appointments and details */
+        .appointment-layout {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Calendar styling */
+        .calendar {
+            flex: 1;
+            max-width: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .calendar h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Calendar table styling */
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calendar th, .calendar td {
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #ccc;
+            height: 50px; /* Make the cells large enough for text */
+        }
+
+        /* Highlight appointment days */
+        .calendar td.appointment {
+            background-color: red;
+            color: white;
+        }
+
+        /* Appointment details */
+        .appointment-details {
+            flex: 1;
+            max-width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* List of coaches */
+        .coach-list {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <span>CoachFinder</span>
+            <div>
+                <a href="#search">🔍 Search</a>
+                <a href="#settings">⚙️ Settings</a>
+                <a href="#appointments">📅 Appointments</a>
+                <a href="#messages">💬 Messages</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Appointment Page Content -->
+    <div class="container">
+        <!-- Greeting -->
+        <div class="greeting">
+            Hello name!
+        </div>
+
+        <!-- Appointment Layout -->
+        <div class="appointment-layout">
+            <!-- Calendar -->
+            <div class="calendar">
+                <h2>April</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- First week of April -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <!-- Second week of April -->
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <!-- Third week of April -->
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <!-- Fourth week of April -->
+                        <tr>
+                            <td class="appointment">16<br>6:00 PM<br>Coach #1</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td class="appointment">20<br>8:00 AM<br>Coach #2</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <!-- Last few days of April -->
+                        <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Appointment Details -->
+            <div class="appointment-details">
+                <h3>Total Amount of Money Due</h3>
+                <p>$60</p>
+                <p2>Coach #1 Amount: $30</p2><br>
+                <p2>Coach #2 Amount: $30</p2>
+
+                <div class="coach-list">
+                    <h3>Current Coaches:</h3>
+                    <p>Coach #1</p>
+                    <p>Coach #2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
