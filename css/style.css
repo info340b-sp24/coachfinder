@@ -1,7 +1,37 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background-color: #eae7e7;
     line-height: 1.7;
     margin: 2em;
+}
+
+#login-body {
+    background-image: url("../img/mh-trainer-2-1533576998.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0em;
+}
+
+#login p {
+    text-indent: 0;
+}
+
+#login h1 {
+    text-shadow: 1px 2px black;
+}
+
+.login-div {
+    backdrop-filter: blur(50px); 
+    padding: 3rem;
+    color:white;
+    border: 1px solid gray; 
+    border-radius: 10px;
+    width: 500px;
 }
 
 header {
@@ -33,3 +63,15 @@ body p {
     text-indent: 2em;
 }
 
+footer {
+    background-color: rgb(202, 202, 202);
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    border-top: 2px solid rgb(255, 255, 255);
+}
