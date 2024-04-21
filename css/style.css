@@ -34,8 +34,17 @@ body {
     text-align: center;
 }
 
-#login-body,#register-body,#other-main{
+#login-body,#register-body {
     background-image: url("../img/login-background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0em;
+}
+
+#other-main{
+    /* background-image: url("../img/login-background.jpg"); */
+    background-color: #f28658;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -130,12 +139,28 @@ body p {
     border-top: 2px solid rgb(255, 255, 255);
 }
 
-#login-footer, #register-footer, #appointment-footer, #message-footer, #search-footer {
+#login-footer, #register-footer, #appointment-footer, #message-footer {
     background-color: rgb(255, 102, 0);
     color: black;
     text-align: center;
     font-size: 0.7rem;
     position: absolute;
+    width: 100%;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+#search-footer {
+    background-color: rgb(255, 102, 0);
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    /* position: absolute; */
     width: 100%;
     line-height: 0.8rem;
     margin: 0;
