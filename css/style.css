@@ -64,6 +64,10 @@ body {
     background-color:rgb(255, 94, 0);
 }
 
+bg-main-orange {
+    background-color: #f28658;
+}
+
 .text-lightorange {
     color:rgb(255, 136, 0);
 }
@@ -72,6 +76,15 @@ body {
     font-family: "Kaushan Script";
 }
 
+.table-radius {
+    border-radius: 5px;
+    border: 2px solid rgb(255, 94, 0); 
+}
+
+.border-white {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
 
 #login h1,#register h1{
     text-shadow: 1px 2px black;
@@ -90,6 +103,20 @@ body {
     border: 3px solid orange; 
     border-radius: 10px;
     width: 500px;
+}
+
+.profile-div {
+    backdrop-filter: blur(50px); 
+    padding: 3rem;
+    color:white;
+    border-left: 2px solid white; 
+    border-right: 2px solid white;
+    width: 80%;
+}
+
+.bg-profile {
+    background-image: url("../img/login-background.jpg");
+    background-size: cover;
 }
 
 

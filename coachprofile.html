@@ -42,41 +42,44 @@
         </nav>
     </section>
 
-    <div class="container-fluid" id="other-main">
-        <div class="container">
-        <h1 class="mt-1">Update Trainer Profile</h1>
+    <div class="container-fluid bg-profile" id="other-main">
+        <div class="container border-white profile-div">
+        <h1 class="mt-3 text-Kaushan text-white">Update Trainer Profile</h1>
         <div class="text-center my-4">
-            <div class="d-flex justify-content-center align-items-center" style="width: 200px; height: 200px; overflow: hidden; border-radius: 50%;">
-                <img src="profile-picture-placeholder.png" alt="Profile Picture" class="img-fluid">
+            <div class="d-flex justify-content-center align-items-center" >
+                <div class="col col-6">
+                    <img src="./img/coach-example.jpg" alt="Profile Picture" class="img-fluid" style="max-width:180px; max-height:320px">
+                </div>
+                <div class="col">
+                    <input type="file" class="form-control-sm" id="profilePicture" accept="image/*">
             </div>
-            <div class="mt-2">
-                <input type="file" class="form-control" id="profilePicture" accept="image/*">
             </div>
+
         </div>
         <form>
-            <div class="mb-3">
-                <label for="age" class="form-label">Age</label>
+            <div class="mb-4">
+                <label for="age" class="form-label text-Kaushan text-white">Age: </label>
                 <input type="number" class="form-control" id="age" placeholder="Enter your age">
             </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number</label>
+            <div class="mb-4">
+                <label for="phone" class="form-label text-Kaushan text-white">Phone Number: </label>
                 <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
             </div>
-            <div class="mb-3">
-                <label for="specialty" class="form-label">Specialty</label>
+            <div class="mb-4">
+                <label for="specialty" class="form-label text-Kaushan text-white">Specialty</label>
                 <input type="text" class="form-control" id="specialty" placeholder="Enter your specialty">
             </div>
-            <div class="mb-3">
-                <label for="experience" class="form-label">Years of Experience</label>
+            <div class="mb-4">
+                <label for="experience" class="form-label text-Kaushan text-white">Years of Experience</label>
                 <input type="number" class="form-control" id="experience" placeholder="Enter years of experience">
             </div>
-            <div class="mb-3">
-                <label for="rate" class="form-label">Rate (per session)</label>
+            <div class="mb-4">
+                <label for="rate" class="form-label text-Kaushan text-white">Rate (per session)</label>
                 <input type="number" class="form-control" id="rate" placeholder="Enter your rate per session">
             </div>
-            <div class="mb-3">
-                <label class="form-label">Availability</label>
-                <table class="table table-white availability-table">
+            <div class="mb-4">
+                <label class="form-label text-Kaushan text-white">Availability</label>
+                <table class="table table-white availability-table table-radius">
                     <thead>
                         <tr>
                             <th>Time</th>
@@ -223,8 +226,8 @@
                     </tbody>
                 </table>
             </div>
-            <div class="text-center pb-4">
-                <button type="submit" class="btn btn-primary btn-orange">Save Changes</button>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-orange btn-lg">Save Changes</button>
             </div>
         </div>
         </form>
