@@ -141,8 +141,13 @@ body p {
     margin-bottom: 5em;
 }
 
+#home-main {
+    background-image: url("../img/login-background.jpg");
+}
+
 #home-main #main-word {
     font-family: "Kaushan Script";
+    color: white;
     font-size: 20px;
     text-align: center;
 }
@@ -162,6 +167,14 @@ body p {
     text-indent: 0;
 }
 
+#other-main {
+    background-image: url("../img/login-background.jpg");
+    color: white;
+}
+
+#other-footer {
+    font-size: 0.7rem;
+}
 
 
 /* Media Query */
