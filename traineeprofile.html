@@ -7,50 +7,40 @@
     <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Trainee Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Spice" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="home-body">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-orange nav-border">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">CoachFinder</a>
-
-            <!-- Navbar toggle button for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- Search link with magnifying glass emoji -->
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white nav-col-border" href="searchpage.html"><span>🔍</span> Search</a>
-                    </li>
-
-                    <!-- Settings link with gear emoji -->
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white nav-col-border" href="traineeprofile.html"><span>⚙️</span> Settings</a>
-                    </li>
-
-                    <!-- Appointments link with calendar emoji -->
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white nav-col-border" href="appointmentscreen.html"><span>📅</span> Appointments</a>
-                    </li>
-
-                    <!-- Messages link with chat emoji -->
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white nav-col-border" href="#messages"><span>💬</span> Messages</a>
-                    </li>
-
-                    <!-- Logout link -->
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white nav-col-border" href="#logout">Logout</a>
-                    </li>
-                </ul>
+<body>
+    <section id="all-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-orange nav-border">
+            <div class="container-fluid">
+                <a class="navbar-brand text-Kaushan mx-3" href="home.html">Coach Finder</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2 nav-item-equalspace">
+                            <a class="nav-link text-white nav-col-border" href="#search"><span class="search-icon">🔍</span> Search</a>
+                        </li>
+                        <li class="nav-item mx-2 nav-item-equalspace">
+                            <a class="nav-link text-white nav-col-border" href="#settings"><span class="text-white">⚙️</span> Settings</a>
+                        </li>
+                        <li class="nav-item mx-2 nav-item-equalspace">
+                            <a class="nav-link text-white nav-col-border" href="appointmentscreen.html"><span>📅</span> Appointments</a>
+                        </li>
+                        <li class="nav-item mx-2 nav-item-equalspace">
+                            <a class="nav-link text-white nav-col-border" href="#messages"><span>💬</span> Messages</a>
+                        </li>
+                        <li class="nav-item mx-2 nav-item-equalspace">
+                            <a class="nav-link text-white nav-col-border" href="#login.html">Login</a>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
 
     <div class="container-fluid" id="other-main">
         <h1 class="mt-1">Update Trainee Profile</h1>
