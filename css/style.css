@@ -4,7 +4,8 @@ html {
 }
 
 body {
-    background-color: #fa8e36;
+    /* background-color: #fa8e36; */
+    background-color: #f28658;
     line-height: 1.7;
     height: 100%;
     width: 100%;
@@ -63,7 +64,7 @@ body {
 }
 
 
-#login h1,#register h1 {
+#login h1,#register h1{
     text-shadow: 1px 2px black;
     font-family: "Bungee Spice";
     color:black;
@@ -112,7 +113,24 @@ body p {
     text-indent: 2em;
 }
 
-#login-footer,#register-footer {
+
+#home-footer, #search-footer, #profile-footer{
+    background-color: rgb(255, 102, 0);
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    position: relative;
+    width: 100%;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+#login-footer, #register-footer, #appointment-footer, #message-footer {
     background-color: rgb(255, 102, 0);
     color: black;
     text-align: center;
@@ -123,6 +141,8 @@ body p {
     margin: 0;
     padding: 0;
     bottom: 0;
+    left: 0;
+    right:0;
     border-top: 2px solid rgb(255, 255, 255);
 }
 
@@ -143,9 +163,10 @@ body p {
     font-size: 25px;
 }
 
-#home-footer {
-    font-size: 0.7rem;
-}
+/* #home-footer {
+    background-color: rgb(255, 102, 0);
+    font-size: 1.7rem;
+} */
 
 #home-img {
     width: 2000px;
@@ -156,7 +177,8 @@ body p {
 
 #home-main #main-word {
     font-family: "Kaushan Script";
-    font-size: 20px;
+    color:aquamarine;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -167,7 +189,12 @@ body p {
 
 #home-main h2 {
     font-family: "Permanent Marker";
-    color: red;
+    color: rgb(175, 224, 208);
+    padding: 2em;
+}
+
+#home-main .row {
+    padding: 2em;
 }
 
 #home-main #demo {
