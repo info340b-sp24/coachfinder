@@ -34,7 +34,7 @@ body {
     text-align: center;
 }
 
-#login-body,#register-body{
+#login-body,#register-body,#other-main{
     background-image: url("../img/login-background.jpg");
     background-size: cover;
     background-position: center;
@@ -200,11 +200,6 @@ body p {
 #home-main #demo {
     font-size: 20px;
     text-indent: 0;
-}
-
-#other-main {
-    background-image: url("../img/login-background.jpg");
-    color: white;
 }
 
 
