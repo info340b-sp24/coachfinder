@@ -3,12 +3,24 @@ html {
     width: 100%;
 }
 
+table {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+  }
+
 body {
     /* background-color: #fa8e36; */
     background-color: #f28658;
     line-height: 1.7;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    flex: 1;
 }
 
 .nav-border {
@@ -42,14 +54,6 @@ body {
     margin: 0em;
 }
 
-#other-main{
-    /* background-image: url("../img/login-background.jpg"); */
-    background-color: #f28658;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    margin: 0em;
-}
 
 #login,#register p {
     text-indent: 0;
@@ -120,12 +124,29 @@ body {
     background-size: cover;
 }
 
+.bg-other {
+    background-image: url("../img/background2.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    flex:1;
+}
+
+.blur-effect {
+    backdrop-filter: blur(10px); /* 在此元素上应用模糊效果 */
+    flex:1;
+    width: 100%;
+}
+
 .profile-photo {
     width:200px; 
     height: 200px; 
     object-fit: cover;
 }
 
+.table-overflow {
+    overflow-x: auto;
+}
 
 header {
     background-color: #793030;
@@ -187,6 +208,7 @@ body p {
     left: 0;
     right:0;
     border-top: 2px solid rgb(255, 255, 255);
+    flex-shrink: 0;
 }
 
 #home-body {
@@ -248,23 +270,151 @@ body p {
 
 /* Media Query */
 
-@media (min-width: 598px) {
+/* @media (min-width: 598px) {
     #home-main #main-word {
         font-size: 30px;
         text-align: center;
     }
-}
+} */
 
-@media (min-width: 768px) {
+
+
+/* @media (min-width: 768px) {
     #home-main #main-word {
         font-size: 50px;
         text-align: center;
+    } */
+
+@media (max-width: 768px){
+
+    #home-main #main-word {
+        font-size: 20px;
+        text-align: center;
     }
+
+    .login-div, .profile-div, .container {
+        width: 90%;  
+        padding: 20px;
+    }
+
+    body {
+        background-color: #f28658;
+        height: 100%
+    }
+
+    form {
+        width:90%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .btn, .form-control {
+        width: 100%; 
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    .container {
+        width:90%;
+    }
+
+    #message {
+        width:100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #message .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .appointment-layout {
+        flex-direction: column; 
+    }
+
+    .calendar, .appointment-details {
+        width: 100%; 
+        padding: 0 15px; 
+    }
+
+    #other-main .container {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #home-main #main-word {
+        font-size: 20px;
+        text-align: center;
+    }
+    .container {
+        width:90%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 14px;
+    }
+
+    .form-label, h1 {
+        font-size: 18px;
+    }
+
+    .availability-table th, .availability-table td {
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 10px 5px;
+    }
+
+    #message .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    #other-main .container {
+        padding: 0;
+        margin: 0;
+    }
+}
 
     #home-header h1 {
         font-size: 40px;
     }
-}
 
 /* @media (min-width: 992px) {
 
