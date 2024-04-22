@@ -373,6 +373,13 @@ body p {
         padding: 0;
         margin: 0;
     }
+    .nav-col-border {
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -417,6 +424,13 @@ s
         margin: 0;
     }
 
+    .nav-col-border {
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+    }
 }
 
     #home-header h1 {
