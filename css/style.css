@@ -64,7 +64,7 @@ body {
     background-color:rgb(255, 94, 0);
 }
 
-bg-main-orange {
+.bg-main-orange {
     background-color: #f28658;
 }
 
@@ -85,6 +85,7 @@ bg-main-orange {
     border-left: 3px solid white;
     border-right: 3px solid white;
 }
+
 
 #login h1,#register h1{
     text-shadow: 1px 2px black;
@@ -117,6 +118,12 @@ bg-main-orange {
 .bg-profile {
     background-image: url("../img/login-background.jpg");
     background-size: cover;
+}
+
+.profile-photo {
+    width:200px; 
+    height: 200px; 
+    object-fit: cover;
 }
 
 
@@ -166,28 +173,12 @@ body p {
     border-top: 2px solid rgb(255, 255, 255);
 }
 
-#login-footer, #register-footer, #appointment-footer, #message-footer {
+#login-footer, #register-footer, #appointment-footer, #message-footer, #search-footer  {
     background-color: rgb(255, 102, 0);
     color: black;
     text-align: center;
     font-size: 0.7rem;
     position: absolute;
-    width: 100%;
-    line-height: 0.8rem;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    left: 0;
-    right:0;
-    border-top: 2px solid rgb(255, 255, 255);
-}
-
-#search-footer {
-    background-color: rgb(255, 102, 0);
-    color: black;
-    text-align: center;
-    font-size: 0.7rem;
-    /* position: absolute; */
     width: 100%;
     line-height: 0.8rem;
     margin: 0;
