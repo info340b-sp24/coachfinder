@@ -1,0 +1,455 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+  }
+
+body {
+    /* background-color: #fa8e36; */
+    background-color: #f28658;
+    line-height: 1.7;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    flex: 1;
+}
+
+.nav-border {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-item-equalspace {
+    flex: 1;
+    text-align: center;
+    min-width: 10rem;
+}
+
+.nav-col-border {
+    border-left: 2px solid white;
+    border-top: none;
+    border-bottom: none; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+#login-body,#register-body {
+    background-image: url("../img/login-background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0em;
+}
+
+
+#login,#register p {
+    text-indent: 0;
+}
+
+.container-center {
+
+}
+
+.btn-orange {
+    background-color:rgb(255, 94, 0);
+    border: 2px solid white; 
+}
+
+.bg-orange {
+    background-color:rgb(255, 94, 0);
+}
+
+.bg-main-orange {
+    background-color: #f28658;
+}
+
+.text-lightorange {
+    color:rgb(255, 136, 0);
+}
+
+.text-Kaushan {
+    font-family: "Kaushan Script";
+}
+
+.table-radius {
+    border-radius: 5px;
+    border: 2px solid rgb(255, 94, 0); 
+}
+
+.border-white {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+
+#login h1,#register h1{
+    text-shadow: 1px 2px black;
+    font-family: "Bungee Spice";
+    color:black;
+}
+
+.text-bungee {
+    font-family: "Bungee Spice";
+}
+
+.login-div {
+    backdrop-filter: blur(50px); 
+    padding: 3rem;
+    color:white;
+    border: 3px solid orange; 
+    border-radius: 10px;
+    width: 500px;
+}
+
+.profile-div {
+    backdrop-filter: blur(50px); 
+    padding: 3rem;
+    color:white;
+    border-left: 2px solid white; 
+    border-right: 2px solid white;
+    width: 80%;
+}
+
+.bg-profile {
+    background-image: url("../img/login-background.jpg");
+    background-size: cover;
+}
+
+.bg-other {
+    background-image: url("../img/background2.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    flex:1;
+}
+
+.blur-effect {
+    backdrop-filter: blur(10px); /* 在此元素上应用模糊效果 */
+    flex:1;
+    width: 100%;
+}
+
+.profile-photo {
+    width:200px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+.table-overflow {
+    overflow-x: auto;
+}
+
+
+header {
+    background-color: #793030;
+    color: #fff;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.functionality-emphasize {
+    font-weight: bold;
+    text-decoration:red dotted underline;
+} 
+
+section h2 {
+    color: #793030;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+img {
+    max-height: 50%;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body p {
+    text-indent: 2em;
+}
+
+
+#home-footer, #profile-footer, #search-footer {
+    background-color: rgb(255, 102, 0);
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    position: relative;
+    width: 100%;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+#login-footer, #register-footer, #appointment-footer, #message-footer {
+    background-color: rgb(255, 102, 0);
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    position: absolute;
+    width: 100%;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border-top: 2px solid rgb(255, 255, 255);
+    flex-shrink: 0;
+}
+
+#home-body {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0em;
+}
+
+#home-header {
+    font-family: "Bungee Spice", sans-serif;
+    background-image: url("../img/home_header.jpeg");
+    background-size: cover;
+}
+
+#home-header h1 {
+    font-size: 25px;
+}
+
+/* #home-footer {
+    background-color: rgb(255, 102, 0);
+    font-size: 1.7rem;
+} */
+
+#home-img {
+    width: 2000px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 5em;
+}
+
+#home-main #main-word {
+    font-family: "Kaushan Script";
+    color:aquamarine;
+    font-size: 30px;
+    text-align: center;
+}
+
+#home-main #word-block {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+#home-main h2 {
+    font-family: "Permanent Marker";
+    color: rgb(175, 224, 208);
+    padding: 2em;
+}
+
+#home-main .row {
+    padding: 2em;
+}
+
+#home-main #demo {
+    font-size: 20px;
+    text-indent: 0;
+}
+
+
+/* Media Query */
+
+/* @media (min-width: 598px) {
+    #home-main #main-word {
+        font-size: 30px;
+        text-align: center;
+    }
+} */
+
+
+
+/* @media (min-width: 768px) {
+    #home-main #main-word {
+        font-size: 50px;
+        text-align: center;
+    } */
+
+@media (max-width: 768px){
+
+    #home-main #main-word {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .login-div, .profile-div, .container {
+        width: 90%;  
+        padding: 0px;
+    }
+
+    body {
+        background-color: #f28658;
+        height: 100%
+    }
+
+    form {
+        width:90%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .btn, .form-control {
+        width: 100%; 
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    .container {
+        width:90%;
+    }
+
+    #message {
+        width:100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #message .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .appointment-layout {
+        flex-direction: column; 
+    }
+
+    .calendar, .appointment-details {
+        width: 100%; 
+        padding: 0 15px; 
+    }
+
+    #other-main {
+        text-align: center;
+    }
+
+    #other-main .container {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-col-border {
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #home-main #main-word {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container {
+        width:90%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 14px;
+    }
+
+    .form-label, h1 {
+        font-size: 18px;
+    }
+
+    .availability-table th, .availability-table td {
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 10px 5px;
+    }
+
+    #message .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    #other-main .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-col-border {
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+    #home-header h1 {
+        font-size: 40px;
+    }
+
+/* @media (min-width: 992px) {
+    #other-main {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #other-main {
+        text-align: center;
+    }
+} */
