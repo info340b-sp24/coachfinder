@@ -9,3 +9,16 @@ Hi! This is Muyun. Here is my push to the repo.
 Hi! This is Simon! Hello there!
 
 Hi! I'm Haobo Jiang. Here's my push to this repo!
+
+
+
+Timeline for draft 2:
+
+Work distribution (individual work):
+Haobo Jiang: Turn home.html, searchpage.html into react components (by the end of week 7)
+Simon: Turn login.html, register.html into react components (by the end of week 7)
+Muyun Xiao: Turn coachprofile.html and traineeprofile.html into react components (by the end of week 7)
+Vidhya Narayanan: Turn appointmentscreen.html and message.html into react components (by the end of week 7)
+
+obstacles/blocks we may encounter:
+too many bugs that are difficult to be fixed, some react components may not be easy to be implemented
