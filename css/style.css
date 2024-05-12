@@ -54,6 +54,13 @@ body {
     margin: 0em;
 }
 
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px; 
+  }
 
 #login,#register p {
     text-indent: 0;
@@ -183,7 +190,7 @@ body p {
 }
 
 
-#home-footer, #profile-footer, #search-footer {
+#home-footer, #profile-footer, #search-footer, #login-footer, #register-footer{
     background-color: rgb(255, 102, 0);
     color: black;
     text-align: center;
@@ -199,7 +206,7 @@ body p {
     border-top: 2px solid rgb(255, 255, 255);
 }
 
-#login-footer, #register-footer, #appointment-footer, #message-footer {
+#appointment-footer, #message-footer {
     background-color: rgb(255, 102, 0);
     color: black;
     text-align: center;
@@ -297,9 +304,14 @@ body p {
         text-align: center;
     }
 
-    .login-div, .profile-div, .container {
+    .profile-div, .container {
         width: 90%;  
         padding: 0px;
+    }
+
+    .login-div {
+        font-size: 14px; 
+        border: 1px solid #ccc;
     }
 
     body {
@@ -398,17 +410,27 @@ body p {
         justify-content: center;
         align-items: center; 
     }
-
-    h1 {
-        font-size: 35px;
-    }
+    
 
     .navbar-brand, .nav-link {
         font-size: 14px;
     }
 
-    .form-label, h1 {
-        font-size: 18px;
+    .form-label{
+        font-size: 12px;
+    }
+    .btn, .form-control {
+        width: 100%; 
+        font-size: 14px;
+    }
+
+    .login-div {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 35px;
     }
 
     .availability-table th, .availability-table td {
