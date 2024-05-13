@@ -5,6 +5,7 @@ import './css/style.css'
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
 import HomeComponent from './components/home';
+import SearchComponent from './components/search';
 
 function App(props) {
   return (
@@ -25,7 +26,8 @@ function App(props) {
       </header> */
       <>
         {/* <LoginComponent /> */}
-        <HomeComponent />
+        {/* <HomeComponent /> */}
+        <SearchComponent />
         {/* <RegisterComponent /> */}
       </>
       }

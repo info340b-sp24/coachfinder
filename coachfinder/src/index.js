@@ -8,6 +8,7 @@ import './css/style.css'
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
 import HomeComponent from './components/home';
+import SearchComponent from './components/search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(

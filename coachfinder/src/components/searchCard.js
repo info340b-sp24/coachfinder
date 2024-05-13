@@ -2,21 +2,14 @@ import React from 'react';
 import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-// example demo data objects
-// [
-//     { id: "1", src: "default-profile-pic.jpg", alt: "Coach Profile Picture", name: "John Doe", specialty: "Powerlifting", price: "$30"}
-// ]
-
-// style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%"
-
-export function HomeDemo(props)
+export function SearchCard(props)
 {
-    const demoData = props.demoData;
-    const src = demoData.src;
-    const alt = demoData.alt;
-    const name = demoData.name;
-    const specialty = demoData.specialty;
-    const price = demoData.price;
+    const cardData = props.cardData;
+    const src = cardData.src;
+    const alt = cardData.alt;
+    const name = cardData.name;
+    const specialty = cardData.specialty;
+    const price = cardData.price;
 
     const priceString = "$" + price + "/session";
 
@@ -28,6 +21,7 @@ export function HomeDemo(props)
                     <p><strong>Name:</strong> { name } </p>
                     <p><strong>Specialty:</strong> { specialty } </p>
                     <p><strong>Price:</strong> { priceString } </p>
+                    <button className="btn btn-primary"><span>📅</span> Schedule</button>
                 </div>
             </div>
         </div>
