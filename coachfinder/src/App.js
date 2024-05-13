@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import '../App.css';
+import logo from './components/logo.svg';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../css/style.css'
-import LoginComponent from './login';
-import home from './home';
+import './css/style.css'
+import LoginComponent from './components/login';
 
 function App() {
   return (

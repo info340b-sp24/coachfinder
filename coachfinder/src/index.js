@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App';
+import App from './App';
 import reportWebVitals from './components/reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
-import home from './components/home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
