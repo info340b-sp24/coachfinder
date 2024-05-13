@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+import logo from './components/logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
-import LoginComponent from './login';
+import LoginComponent from './components/login';
 
 function App() {
   return (
