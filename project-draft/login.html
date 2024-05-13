@@ -46,15 +46,17 @@
 
     <section id="login" class="login">
     <div class="container">
-        <div class="container-fluid pb-1 mt-5 login-div">
+        <div class="container-fluid pb-1 mt-5 mb-5 login-div">
             <h1 class=" fw-bold">System Login</h1>
             <div class="mb-3">
                 <label for="Useremail" class="form-label lead">Email:</label>
-                <input class="form-control" type="text" id="Useremail" name="Useremail" placeholder="xx@xx.com">
+                <input class="form-control" type="email" id="Useremail" name="Useremail" placeholder="xx@xx.com" required>
+                <div class="invalid-feedback">Please enter a valid email</div>
             </div>
             <div class="mb-3">
                 <label for="Userpassword" class="form-label lead">Password:</label>
-                <input class="form-control" type="password" id="Userpassword" name="Userpassword">
+                <input class="form-control" type="password" id="Userpassword" name="Userpassword" required>
+                <div class="invalid-feedback">Password must be at least 8 characters</div>
             </div>
             <div class="text-center mt-5">
                 <button class="w-50 btn btn-lg btn-primary btn-orange" type="submit">Log in</button>

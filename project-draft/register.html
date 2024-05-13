@@ -45,19 +45,22 @@
     </section>
 
     <section id="register" class="register">
-        <div class="container-fluid pb-1 mt-5 login-div">
+        <div class="container-fluid pb-1 mt-5 mb-5 login-div">
             <h1 class="mb-5 fw-bold text-Kaushan">Register</h1>
             <div class="mb-3">
                 <label for="Useremail" class="form-label lead">Email:</label>
-                <input class="form-control" type="text" id="Useremail" name="Useremail" placeholder="xx@xx.com">
+                <input class="form-control" type="email" id="Useremail" name="Useremail" placeholder="xx@xx.com" required>
+                <div class="invalid-feedback">Please enter a valid email</div>
             </div>
             <div class="mb-3">
                 <label for="Userpassword" class="form-label lead">Password:</label>
-                <input class="form-control" type="password" id="Userpassword-1" name="Userpassword-1">
+                <input class="form-control" type="password" id="Userpassword-1" name="Userpassword-1" required minLength= 8 >
+                <div class="invalid-feedback">Password must be at least 8 characters</div>
             </div>
             <div class="mb-3">
                 <label for="Userpassword" class="form-label lead">Confirm password:</label>
-                <input class="form-control" type="password" id="Userpassword-2" name="Userpassword-2">
+                <input class="form-control" type="password" id="Userpassword-2" name="Userpassword-2" required minLength= 8>
+                <div class="invalid-feedback">Password must be at least 8 characters</div>
             </div>
             <div class="text-center mt-5">
                 <button class="w-50 btn btn-lg btn-primary btn-orange" type="submit">Log in</button>
