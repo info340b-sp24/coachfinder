@@ -3,8 +3,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
 import LoginComponent from './components/login';
+import RegisterComponent from './components/register';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -21,7 +22,10 @@ function App() {
           Learn React
         </a>
       </header> */
-      
+      <>
+        <LoginComponent />
+        {/* <RegisterComponent /> */}
+      </>
       }
     </div>
   );
