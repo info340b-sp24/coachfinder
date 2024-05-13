@@ -10,19 +10,19 @@ import RegisterComponent from './components/register';
 import home from './components/home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-    <RegisterComponent />
-  </React.StrictMode>
-);
-
 // root.render(
 //   <React.StrictMode>
 //     <App />
-//     <home />
+//     <RegisterComponent />
 //   </React.StrictMode>
-// )
+// );
+
+root.render(
+  <React.StrictMode>
+    <App />
+    <home />
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

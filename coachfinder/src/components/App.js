@@ -3,6 +3,7 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css'
 import LoginComponent from './login';
+import home from './home';
 
 function App() {
   return (
