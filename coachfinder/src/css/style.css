@@ -12,7 +12,6 @@ main {
   }
 
 body {
-    /* background-color: #fa8e36; */
     background-color: #f28658;
     line-height: 1.7;
     height: 100%;
@@ -64,10 +63,6 @@ body {
 
 .login,.register p {
     text-indent: 0;
-}
-
-.container-center {
-
 }
 
 .btn-orange {
@@ -144,7 +139,7 @@ body {
 }
 
 .blur-effect {
-    backdrop-filter: blur(10px); /* 在此元素上应用模糊效果 */
+    backdrop-filter: blur(10px);
     flex:1;
     width: 100%;
 }
@@ -297,23 +292,6 @@ body p {
 }
 
 
-/* Media Query */
-
-/* @media (min-width: 598px) {
-    #home-main #main-word {
-        font-size: 30px;
-        text-align: center;
-    }
-} */
-
-
-
-/* @media (min-width: 768px) {
-    #home-main #main-word {
-        font-size: 50px;
-        text-align: center;
-    } */
-
 @media (max-width: 768px){
 
     #home-main #main-word {
@@ -321,12 +299,12 @@ body p {
         text-align: center;
     }
 
-    .login-div, .profile-div, .container {
+    .login-div, .register-div, .profile-div, .container {
         width: 90%;  
         padding: 0px;
     }
 
-    .login-div {
+    .login-div .register-div{
         padding: 5px;
     }
 
@@ -428,7 +406,7 @@ body p {
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .navbar-brand, .nav-link {
@@ -469,15 +447,3 @@ body p {
     #home-header h1 {
         font-size: 40px;
     }
-
-/* @media (min-width: 992px) {
-    #other-main {
-        text-align: center;
-    }
-}
-
-@media (min-width: 1200px) {
-    #other-main {
-        text-align: center;
-    }
-} */
