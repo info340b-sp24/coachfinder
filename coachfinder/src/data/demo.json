@@ -1,5 +1,5 @@
 [
     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
-    { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
-    { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"}
+    { "id": "2", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
+    { "id": "3", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"}
 ]

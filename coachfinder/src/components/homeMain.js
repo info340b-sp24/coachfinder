@@ -1,12 +1,20 @@
 import React from 'react';
-import { homeDemo } from './homeDemo';
+import { HomeDemo } from './homeDemo';
+
+import homeImage from '../img/home_main.jpeg';
 
 // example demo data objects
 // [
 //     { src: "", alt: "", name: "", specialty: "", price: ""}
 // ]
 
-export function homeMain(props)
+// const EXAMPLE_ITEM = [
+//     { id: "1", src: "default-profile-pic.jpg", alt: "Coach Profile Picture", name: "John Doe", specialty: "Powerlifting", price: "$30"}
+//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
+//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"}
+// ]
+
+export function HomeMain(props)
 {
     const demoList = props.demoList;
 
@@ -23,7 +31,7 @@ export function homeMain(props)
                     <input type="text" className="form-control" placeholder="Search for what you need here..." aria-label="Search" aria-describedby="search-icon" />
                 </div>
                 <div>
-                    <img id="home-img" src="img/home_main.jpeg" alt="Picture of the Home Page" />
+                    <img id="home-img" src={ homeImage } alt="Picture of the Home Page" />
                 </div>
                 <div>
                     <div className="text-center">
@@ -32,14 +40,15 @@ export function homeMain(props)
                         </h2>
                     </div>
                     <div className="row">
-                        { demoList.map(demo => {
-                            <homeDemo demoData={demo} key={demo.id} />
-                        })}
-                        <p id="demo">
+                        { demoList.map(demo => (
+                            <HomeDemo demoData={demo} key={demo.id} />
+                        ))}
+
+                        {/* <p id="demo">
                             <a style="text-decoration:none" href="../project-group03/login.html">
                                 Need More Demo? Please login!
                             </a>
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>

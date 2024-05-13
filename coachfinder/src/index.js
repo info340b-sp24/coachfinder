@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
+import HomeComponent from './components/home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -19,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <home />
+    <HomeComponent />
   </React.StrictMode>
 );
 
