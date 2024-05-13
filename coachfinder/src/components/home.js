@@ -5,7 +5,7 @@ import { footer } from './footer';
 import demoWhole from '../data/demo.json'
 
 
-import './css/style.css';
+import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
