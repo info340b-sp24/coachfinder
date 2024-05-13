@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
+import HomeComponent from './components/home';
 
 function App(props) {
   return (
@@ -23,7 +24,8 @@ function App(props) {
         </a>
       </header> */
       <>
-        <LoginComponent />
+        {/* <LoginComponent /> */}
+        <HomeComponent />
         {/* <RegisterComponent /> */}
       </>
       }
