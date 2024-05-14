@@ -1,0 +1,12 @@
+{
+  "name": "project-group03",
+  "version": "1.0.0",
+  "description": "This repository contains code for an interactive information web app, created for the _Client-Side Web Development_ course at the UW iSchool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

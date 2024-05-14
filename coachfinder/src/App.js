@@ -6,6 +6,7 @@ import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
 import HomeComponent from './components/home';
 import SearchComponent from './components/search';
+import AppointmentsScreen from './components/appointmentScreen';
 
 function App(props) {
   return (
