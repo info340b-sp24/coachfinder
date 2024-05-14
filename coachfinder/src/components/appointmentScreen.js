@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { NavBar } from './navbar';
+import { FooterComponent } from './footer';
+import './style.css'; // Import custom styles
 
 const AppointmentsScreen = () => {
     const [coach1ImageVisible, setCoach1ImageVisible] = useState(false);
@@ -15,47 +18,14 @@ const AppointmentsScreen = () => {
     return (
         <div className="bg-other">
             <main className="blur-effect">
-                <section id="all-nav" className="all-nav">
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-orange nav-border">
-                        <div className="container-fluid">
-                            <a className="navbar-brand text-Kaushan mx-3" href="home.html">Coach Finder</a>
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarNav">
-                                <ul className="navbar-nav ms-auto">
-                                    <li className="nav-item mx-2 nav-item-equalspace">
-                                        <a className="nav-link text-white nav-col-border" href="searchpage.html"><span className="search-icon">🔍</span> Search</a>
-                                    </li>
-                                    <li className="nav-item mx-2 nav-item-equalspace">
-                                        <a className="nav-link text-white nav-col-border" href="traineeprofile.html"><span className="text-white">⚙️</span> Profile</a>
-                                    </li>
-                                    <li className="nav-item mx-2 nav-item-equalspace">
-                                        <a className="nav-link text-white nav-col-border" href="appointmentscreen.html"><span>📅</span> Appointments</a>
-                                    </li>
-                                    <li className="nav-item mx-2 nav-item-equalspace">
-                                        <a className="nav-link text-white nav-col-border" href="message.html"><span>💬</span> Messages</a>
-                                    </li>
-                                    <li className="nav-item mx-2 nav-item-equalspace">
-                                        <a className="nav-link text-white nav-col-border" href="login.html">Login</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </section>
-
-                {/* Appointment Page Content */}
+                <NavBar />
                 <div className="container-fluid" id="other-main">
                     <div className="container-fluid">
-                        {/* Greeting */}
                         <div className="my-4">
                             <h1 className="text-Kaushan text-white">Hello, name!</h1>
                         </div>
-
-                        {/* Appointment Layout */}
                         <div className="appointment-layout">
-                            {/* Calendar */}
+                            {/* Calendar Section */}
                             <div className="calendar flex-fill text-white">
                                 <h4>April</h4>
                                 <table className="table table-bordered">
@@ -71,24 +41,75 @@ const AppointmentsScreen = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {/* Calendar rows */}
-                                        {/* Replace the calendar rows with your dynamic content */}
+                                        {/* Dynamically render calendar rows */}
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td className="appointment">1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td className="appointment">8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="appointment">16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td className="appointment">20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            {/* Appointment Details */}
+                            {/* Appointment Details Section */}
                             <div className="appointment-details flex-fill text-white">
                                 <h4>Payment Due:</h4>
                                 <p>$60</p>
 
                                 <div className="coach-list mt-3 text-white">
                                     <h4>Current Coaches:</h4>
-                                    {/* Coach #1 with toggle link */}
                                     <span className="toggle-link" onClick={() => toggleCoachImage('coach1')}>Coach #1</span>
                                     {coach1ImageVisible && <img className="coach-img" src="coach1_image.jpg" alt="Coach 1 Image" />}
 
-                                    {/* Coach #2 with toggle link */}
                                     <span className="toggle-link" onClick={() => toggleCoachImage('coach2')}>Coach #2</span>
                                     {coach2ImageVisible && <img className="coach-img" src="coach2_image.jpg" alt="Coach 2 Image" />}
                                 </div>
@@ -97,17 +118,7 @@ const AppointmentsScreen = () => {
                     </div>
                 </div>
             </main>
-
-            {/* Footer */}
-            <footer id="profile-footer" className="appointment-footer">
-                <div className="container text-white">
-                    <p className="text-center mt-0 mb-0">This website was created by ...</p>
-                    <address className="text-center mt-0 mb-0">
-                        Contact us at <a href="mailto:me@here.com">me@here.com</a>, or at <a href="tel:555-123-4567">(555) 123-4567</a>.
-                    </address>
-                    <p className="text-center mt-0 mb-0">&copy; 2024 The Author.</p>
-                </div>
-            </footer>
+            <FooterComponent />
         </div>
     );
 };
