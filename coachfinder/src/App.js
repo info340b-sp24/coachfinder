@@ -27,8 +27,8 @@ function App(props) {
       <>
         {/* <LoginComponent /> */}
         {/* <HomeComponent /> */}
-        <SearchComponent />
-        {/* <RegisterComponent /> */}
+        {/* <SearchComponent /> */}
+        <RegisterComponent />
       </>
       }
     </div>
