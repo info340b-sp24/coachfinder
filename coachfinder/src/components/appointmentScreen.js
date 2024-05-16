@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavBar } from './navbar';
 import { FooterComponent } from './footer';
-import './style.css'; // Import custom styles
+import '../css/style.css'; // Import custom styles
 
 const AppointmentsScreen = () => {
     const [coach1ImageVisible, setCoach1ImageVisible] = useState(false);

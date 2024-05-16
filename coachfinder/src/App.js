@@ -7,6 +7,9 @@ import RegisterComponent from './components/register';
 import HomeComponent from './components/home';
 import SearchComponent from './components/search';
 import AppointmentsScreen from './components/appointmentScreen';
+import MessageComponent from './components/Message';
+import ProfileComponent from './components/coachProfile'
+
 
 function App(props) {
   return (
@@ -29,7 +32,10 @@ function App(props) {
         {/* <LoginComponent /> */}
         {/* <HomeComponent /> */}
         {/* <SearchComponent /> */}
-        <RegisterComponent />
+        {/* <RegisterComponent /> */}
+        {/* <AppointmentsScreen /> */}
+        {/* <MessageComponent/> */}
+        <ProfileComponent/>
       </>
       }
     </div>

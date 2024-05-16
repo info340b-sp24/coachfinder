@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from './navbar';
+import {NavBar} from './navbar';
 import MessageForm from './MessageForm';
-import Footer from './footer';
+import {FooterComponent} from './footer';
 
 function Message() {
   return (
     <div className="bg-other">
-      <Navbar />
+      <NavBar />
       <main className="blur-effect">
         <MessageForm />
       </main>
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }
