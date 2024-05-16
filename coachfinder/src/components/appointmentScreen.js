@@ -25,7 +25,6 @@ const AppointmentsScreen = () => {
                             <h1 className="text-Kaushan text-white">Hello, name!</h1>
                         </div>
                         <div className="appointment-layout">
-                            {/* Calendar Section */}
                             <div className="calendar flex-fill text-white">
                                 <h4>April</h4>
                                 <table className="table table-bordered">

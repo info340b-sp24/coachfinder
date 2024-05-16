@@ -30,10 +30,15 @@ function App(props) {
       </header> */
       <>
         {/* <LoginComponent /> */}
+<<<<<<< Updated upstream
         {/* <HomeComponent /> */}
         <SearchComponent />
+=======
+        <HomeComponent />
+        { /*<SearchComponent /> */} 
+>>>>>>> Stashed changes
         {/* <RegisterComponent /> */}
-        {/* <AppointmentsScreen /> */}
+        {/* { <AppointmentsScreen /> } */}
         {/* <MessageComponent/> */}
         {/* <ProfileComponent/> */}
       </>
