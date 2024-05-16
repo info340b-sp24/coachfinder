@@ -30,12 +30,12 @@ function App(props) {
       </header> */
       <>
         {/* <LoginComponent /> */}
-        {/* <HomeComponent /> */}
+        <HomeComponent />
         {/* <SearchComponent /> */}
         {/* <RegisterComponent /> */}
         {/* <AppointmentsScreen /> */}
         {/* <MessageComponent/> */}
-        <ProfileComponent/>
+        {/* <ProfileComponent/> */}
       </>
       }
     </div>

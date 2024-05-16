@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './components/reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
+import { Link } from 'react-router-dom' 
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
 import HomeComponent from './components/home';
