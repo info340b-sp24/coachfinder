@@ -23,7 +23,7 @@ function HomeComponent(props)
                 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css?family=Bungee+Spice" rel="stylesheet" />
             </head>
-            <body id="home-body" className="bg-other">
+            <body id="home-body" className="home-body bg-other">
                 <main className="blur-effect">
                     <NavBar />
 

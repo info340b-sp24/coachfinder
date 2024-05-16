@@ -30,8 +30,8 @@ function App(props) {
       </header> */
       <>
         {/* <LoginComponent /> */}
-        <HomeComponent />
-        {/* <SearchComponent /> */}
+        {/* <HomeComponent /> */}
+        <SearchComponent />
         {/* <RegisterComponent /> */}
         {/* <AppointmentsScreen /> */}
         {/* <MessageComponent/> */}
