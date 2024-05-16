@@ -3,26 +3,15 @@ import { HomeDemo } from './homeDemo';
 
 import homeImage from '../img/home_main.jpeg';
 
-// example demo data objects
-// [
-//     { src: "", alt: "", name: "", specialty: "", price: ""}
-// ]
-
-// const EXAMPLE_ITEM = [
-//     { id: "1", src: "default-profile-pic.jpg", alt: "Coach Profile Picture", name: "John Doe", specialty: "Powerlifting", price: "$30"}
-//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
-//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"}
-// ]
-
 export function HomeMain(props)
 {
     const demoList = props.demoList;
 
     return (
-        <div id="home-main" className="container">
+        <div className="home-main container">
             <div className="container-fluid mt-1">
-                <div id="word-block">
-                    <p id="main-word">
+                <div className='word-block'>
+                    <p className='main-word'>
                         FIND your most suitable COACH in the easiest way!
                     </p>
                 </div>
@@ -31,7 +20,7 @@ export function HomeMain(props)
                     <input type="text" className="form-control" placeholder="Search for what you need here..." aria-label="Search" aria-describedby="search-icon" />
                 </div>
                 <div>
-                    <img id="home-img" src={ homeImage } alt="Picture of the Home Page" />
+                    <img className='home-img' src={ homeImage } alt="Picture of the Home Page" />
                 </div>
                 <div>
                     <div className="text-center">
@@ -44,11 +33,11 @@ export function HomeMain(props)
                             <HomeDemo demoData={demo} key={demo.id} />
                         ))}
 
-                        {/* <p id="demo">
-                            <a style="text-decoration:none" href="../project-group03/login.html">
+                        <p className='demo'>
+                            <a href="fake_login.html">
                                 Need More Demo? Please login!
                             </a>
-                        </p> */}
+                        </p>
                     </div>
                 </div>
             </div>

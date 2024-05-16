@@ -7,13 +7,6 @@ import demoWhole from '../data/demo.json'
 import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-// const EXAMPLE_ITEM = [
-//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
-//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"},
-//     { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "$30"}
-// ]
-
-
 function HomeComponent(props)
 {
     return (
@@ -27,7 +20,7 @@ function HomeComponent(props)
                 <main className="blur-effect">
                     <NavBar />
 
-                    <header id="home-header" className="container-fluid text-white bg-white py-5"> 
+                    <header className="home-header container-fluid text-white bg-white py-5"> 
                         <div className="container">
                             <h1>Coach Appointment System</h1>
                         </div>

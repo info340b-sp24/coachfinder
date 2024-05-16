@@ -8,7 +8,7 @@ export function SearchMain(props)
     const mainCard = props.mainCard;
 
     return (
-        <div className="container-fluid mt-1" id="other-main">
+        <div className="other-main container-fluid mt-1" id="other-main">
             <div className="container-fluid">
                 <h1 className="text-Kaushan text-white mt-3 mb-5">Search</h1>
                 <div className="input-group my-5">

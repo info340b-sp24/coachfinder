@@ -7,8 +7,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 //     { id: "1", src: "default-profile-pic.jpg", alt: "Coach Profile Picture", name: "John Doe", specialty: "Powerlifting", price: "$30"}
 // ]
 
-// style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%"
-
 export function HomeDemo(props)
 {
     const demoData = props.demoData;

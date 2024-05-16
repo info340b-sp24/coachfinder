@@ -12,7 +12,7 @@ export default function CoachProfile() {
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Bungee+Spice" rel="stylesheet" />
       <NavBar />
-      <div className="container-fluid bg-profile" id="other-main">
+      <div className="other-main container-fluid bg-profile" id="other-main">
         <ProfileInfo />
       </div>
       <FooterComponent />

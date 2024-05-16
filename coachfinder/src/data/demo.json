@@ -1,5 +1,5 @@
 [
-    { "id": "1", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "30"},
-    { "id": "2", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "30"},
-    { "id": "3", "src": "default-profile-pic.jpg", "alt": "Coach Profile Picture", "name": "John Doe", "specialty": "Powerlifting", "price": "30"}
+    {"id":"1","src":"https://sydneyheadshot.net/wp-content/uploads/2021/06/PPCN_00008.jpg","alt":"Coach Profile Picture","name":"Hewe Grouse","specialty":"powerlifting","price":138},
+    {"id":"2","src":"https://sydneyheadshot.net/wp-content/uploads/2021/06/Sharing-002.jpg","alt":"Coach Profile Picture","name":"Jorie Bockman","specialty":"crossfit","price":66},
+    {"id":"3","src":"https://sydneyheadshot.net/wp-content/uploads/2021/06/PPCN_00010.jpg","alt":"Coach Profile Picture","name":"Lane Karlik","specialty":"bodybuilding","price":89}
 ]

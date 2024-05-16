@@ -19,7 +19,7 @@ const AppointmentsScreen = () => {
         <div className="bg-other">
             <main className="blur-effect">
                 <NavBar />
-                <div className="container-fluid" id="other-main">
+                <div className="other-main container-fluid" id="other-main">
                     <div className="container-fluid">
                         <div className="my-4">
                             <h1 className="text-Kaushan text-white">Hello, name!</h1>
