@@ -3,17 +3,17 @@ import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { NavBar } from './navbar';
 import { FooterComponent } from './footer'
-import { ProfileInfo } from './CoachProfileInfo'
+import { TraineeProfileInfo } from './TraineeProfileInfo'
 
-export default function CoachProfile() {
+export default function TraineeProfile() {
   return (
-    <div>
+    <div className="blur-effect">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Bungee+Spice" rel="stylesheet" />
       <NavBar />
-      <div className="other-main container-fluid bg-profile" id="other-main">
-        <ProfileInfo />
+      <div className="container-fluid bg-profile" id="other-main">
+        <TraineeProfileInfo />
       </div>
       <FooterComponent />
     </div>
