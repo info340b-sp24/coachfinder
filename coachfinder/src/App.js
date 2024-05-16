@@ -8,8 +8,8 @@ import HomeComponent from './components/home';
 import SearchComponent from './components/search';
 import AppointmentsScreen from './components/appointmentScreen';
 import MessageComponent from './components/Message';
-import ProfileComponent from './components/coachProfile'
-
+import CoachComponent from './components/coachProfile'
+import TraineeComponent from './components/traineeProfile'
 
 function App(props) {
   return (
@@ -30,17 +30,21 @@ function App(props) {
       </header> */
       <>
         {/* <LoginComponent /> */}
-<<<<<<< Updated upstream
+
         {/* <HomeComponent /> */}
-        <SearchComponent />
-=======
-        <HomeComponent />
+        {/* <SearchComponent /> */}
+
+        {/* <HomeComponent /> */}
         { /*<SearchComponent /> */} 
->>>>>>> Stashed changes
+
+        {/* <HomeComponent /> */}
+        {/* <SearchComponent /> */}
+
         {/* <RegisterComponent /> */}
         {/* { <AppointmentsScreen /> } */}
         {/* <MessageComponent/> */}
-        {/* <ProfileComponent/> */}
+        {/* <CoachComponent/> */}
+        <TraineeComponent/>
       </>
       }
     </div>
