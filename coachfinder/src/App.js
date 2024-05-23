@@ -29,14 +29,13 @@ function App(props) {
         </a>
       </header> */
       <>
-        {/* <LoginComponent /> */}
-        <HomeComponent />
-        {/* <SearchComponent /> */}
+        <LoginComponent />
+        {/* <HomeComponent /> */}
+        { /*<SearchComponent /> */} 
         {/* <RegisterComponent /> */}
-        {/* <AppointmentsScreen /> */}
+        {/* { <AppointmentsScreen /> } */}
         {/* <MessageComponent/> */}
-        {/* <CoachComponent/> */}
-        {/* <TraineeComponent/> */}
+        {/* <ProfileComponent/> */}
       </>
       }
     </div>
