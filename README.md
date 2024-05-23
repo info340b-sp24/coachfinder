@@ -22,3 +22,15 @@ Vidhya Narayanan: Turn appointmentscreen.html and message.html into react compon
 
 obstacles/blocks we may encounter:
 too many bugs that are difficult to be fixed, some react components may not be easy to be implemented
+
+
+Timeline for the final draft:
+
+Work distribution (individual work):
+Haobo Jiang: filter feature of searchPage, and responsible for the firebase.
+Simon: login and register features.
+Muyun Xiao: profile features (filter mainly).
+Vidhya Narayanan: message and appointment features (chat, etc).
+
+Obstacles/blocks we may encounter:
+too many bugs regarding with interacting features, and firebase could not be deployed correctly.
