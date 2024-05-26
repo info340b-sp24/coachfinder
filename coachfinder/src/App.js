@@ -29,9 +29,9 @@ function App(props) {
         </a>
       </header> */
       <>
-        <LoginComponent />
+        {/* <LoginComponent /> */}
         {/* <HomeComponent /> */}
-        { /*<SearchComponent /> */} 
+        <SearchComponent /> 
         {/* <RegisterComponent /> */}
         {/* { <AppointmentsScreen /> } */}
         {/* <MessageComponent/> */}
