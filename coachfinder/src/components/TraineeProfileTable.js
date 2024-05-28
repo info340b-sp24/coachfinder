@@ -14,7 +14,7 @@ export function TraineeProfileTable() {
             <label htmlForfor="sport" className="form-label text-Kaushan text-white">Sport / Event / Athletic Specialty</label>
             <input type="text" className="form-control" id="sport" placeholder="Enter your specialty" />
         </div>
-        <div class="mb-4">
+        <div className="mb-4">
             <label className="form-label text-Kaushan">Availability</label>
             < Availability />
         </div>

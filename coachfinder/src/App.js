@@ -31,11 +31,12 @@ function App(props) {
       <>
         {/* <LoginComponent /> */}
         {/* <HomeComponent /> */}
-        <SearchComponent /> 
+        {/* <SearchComponent />  */}
         {/* <RegisterComponent /> */}
         {/* { <AppointmentsScreen /> } */}
         {/* <MessageComponent/> */}
-        {/* <ProfileComponent/> */}
+        {/* <TraineeComponent/> */}
+        {/* <CoachComponent/> */}
       </>
       }
     </div>
