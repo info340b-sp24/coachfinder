@@ -31,9 +31,15 @@ function App(props) {
       <>
         {/* <LoginComponent /> */}
         {/* <HomeComponent /> */}
+<<<<<<< Updated upstream
         {/* <SearchComponent />  */}
         {/* <RegisterComponent /> */}
         {/* { <AppointmentsScreen /> } */}
+=======
+        {/* <SearchComponent /> */}
+        <RegisterComponent />
+        {/* <AppointmentsScreen /> */}
+>>>>>>> Stashed changes
         {/* <MessageComponent/> */}
         {/* <TraineeComponent/> */}
         {/* <CoachComponent/> */}

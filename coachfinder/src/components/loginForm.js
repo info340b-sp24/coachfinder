@@ -9,11 +9,11 @@ export function LoginForm() {
     const [passwordFeedback, setPasswordFeedback] = useState('');
 
     const validateEmail = (email) => {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!email) {
             setEmailFeedback("Email is required");
             return false;
-        } else if (!re.test(email)) {
+        } else if (!emailRegex.test(email)) {
             setEmailFeedback("Please enter a valid email address");
             return false;
         } else {
@@ -102,7 +102,13 @@ export function LoginForm() {
                     </div>
                 </div>
                 <div className="text-center mt-5">
-                    <button className="w-50 btn btn-lg btn-primary btn-orange" type="submit">Log in</button>
+                    <button
+                        className="w-50 btn btn-lg btn-primary btn-orange"
+                        type="submit"
+                        disabled={!emailValid || !passwordValid} 
+                    >
+                        Log in
+                    </button>
                 </div>
                 <div className="mt-3 mb-0 text-center">
                     <p>Don't have an account? <a href="/register" className="text-start text-lightorange">Register</a></p>
