@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { NavBar } from './navbar';
 import { LoginForm } from './loginForm';
 import { RegisterLoginFooter } from './registerLoginFooter';
+import { useAuth } from '../contexts/authContext';
+import { doCreateUserWithEmailAndPassword } from '../firebase/auth';
 
 
 function LoginComponent(props) {

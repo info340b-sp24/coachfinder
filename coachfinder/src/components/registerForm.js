@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useAuth } from '../contexts/authContext';
+import { doCreateUserWithEmailAndPassword } from '../firebase/auth';
 
 export function RegisterForm() {
     const [email, setEmail] = useState('');
@@ -57,8 +59,8 @@ export function RegisterForm() {
         setPasswordsMatch(validatePasswords(password1, val));
     };
 
-    const checkSubmit = (event) => {
-        event.preventDefault();
+    const checkSubmit = (e) => {
+        e.preventDefault();
         if (emailValid && passwordsMatch) {
             
             
@@ -69,6 +71,7 @@ export function RegisterForm() {
 
     return (
         <section className="register">
+             {userLoggedIn && (<Navigate to={'/home'} replace={true} />)}
             <form className="container" onSubmit={checkSubmit}>
                 <div className="container-fluid pb-1 mt-5 mb-5 register-div">
                     <h1 className="fw-bold">Register</h1>
