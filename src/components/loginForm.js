@@ -71,8 +71,16 @@ export function LoginForm() {
                     navigate("/homelogin");
                 })
                 .catch((error) => {
+                    alert("login unsuccessful: please try another account and password!");
                     console.error('Error signing in:', error);
                     setError(error.message);
+                    // Clear user input
+                    setEmail('');
+                    setPassword('');
+                    setEmailValid(false);
+                    setPasswordValid(false);
+                    setEmailFeedback('');
+                    setPasswordFeedback('');
                 });
         } else {
             console.log('Invalid input');
