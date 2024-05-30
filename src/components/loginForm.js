@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import { NavLink, Navigate } from 'react-router-dom';
-import { doSignInWithEmailAndPassword } from '../firebase/auth';
-import { useAuth } from '../contexts/authContext';
+import { NavLink } from 'react-router-dom';
 
 export function LoginForm() {
-    const { userLoggedIn } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isSigningIn, setIsSigningIn] = useState(false)
-    const [errorMessage, setErrorMessage] = useState('')
     const [emailValid, setEmailValid] = useState(false);
     const [passwordValid, setPasswordValid] = useState(false);
     const [emailFeedback, setEmailFeedback] = useState('');
@@ -60,16 +55,18 @@ export function LoginForm() {
         setPasswordValid(validatePassword(val));
     };
 
-    const checkSubmit = async (e) => {
+    const checkSubmit = (e) => {
         e.preventDefault();
-        if(!isSigningIn) {
-            setIsSigningIn(true)
-            await doSignInWithEmailAndPassword(email, password)
+        if (emailValid && passwordValid) {
+            console.log('Email:', email, 'Password:', password);
+            
+        } else {
+            console.log('Invalid input');
         }
+    };
 
     return (
         <section className='login'>
-            {userLoggedIn && (<Navigate to={'/home'} replace={true} />)}
         <form onSubmit={checkSubmit} noValidate className="form container">
             <div className="container-fluid pb-1 mt-5 mb-5 login-div">
                 <h1 className="fw-bold">System Login</h1>
@@ -121,7 +118,6 @@ export function LoginForm() {
         </form>
         </section>
     );
-}
 }
 
 export default LoginForm;
