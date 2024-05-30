@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebase';
+import { auth } from '../firebase/firebase.js';
 
 export function LoginForm() {
     const [email, setEmail] = useState('');
