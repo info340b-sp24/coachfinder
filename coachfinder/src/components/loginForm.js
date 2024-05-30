@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export function LoginForm() {
     const [email, setEmail] = useState('');
@@ -111,7 +112,7 @@ export function LoginForm() {
                     </button>
                 </div>
                 <div className="mt-3 mb-0 text-center">
-                    <p>Don't have an account? <a href="/register" className="text-start text-lightorange">Register</a></p>
+                    <p>Don't have an account? <NavLink to="/register" className="text-start text-lightorange">Register</NavLink></p>
                 </div>
             </div>
         </form>

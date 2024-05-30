@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './components/reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css'
-import { Link } from 'react-router-dom' 
+import { Link, BrowserRouter } from 'react-router-dom' 
 import LoginComponent from './components/login';
 import RegisterComponent from './components/register';
 import HomeComponent from './components/home';
@@ -21,7 +21,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 

@@ -19,7 +19,5 @@ export function TraineeProfileInfo() {
     </div>
     <TraineeProfileTable/>
   </div>
-
-
   )
 }
