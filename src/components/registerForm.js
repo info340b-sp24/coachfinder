@@ -1,5 +1,6 @@
 // registerForm.js
 import React, { useState } from 'react';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebase';
 
 export function RegisterForm() {
@@ -60,15 +61,17 @@ export function RegisterForm() {
         setPasswordsMatch(validatePasswords(password1, val));
     };
 
-    const checkSubmit = async (event) => {
+    const checkSubmit = (event) => {
         event.preventDefault();
         if (emailValid && passwordsMatch) {
-            try {
-                await auth.createUserWithEmailAndPassword(email, password1);
-                alert('User registered successfully');
-            } catch (error) {
-                setError(error.message);
-            }
+            createUserWithEmailAndPassword(auth, email, password1)
+                .then((userCredential) => {
+                    console.log('User registered:', userCredential.user);
+                })
+                .catch((error) => {
+                    console.error('Error registering:', error);
+                    setError(error.message);
+                });
         } else {
             console.log('Invalid input');
         }

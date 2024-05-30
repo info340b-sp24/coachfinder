@@ -1,6 +1,7 @@
 // loginForm.js
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebase';
 
 export function LoginForm() {
@@ -58,15 +59,17 @@ export function LoginForm() {
         setPasswordValid(validatePassword(val));
     };
 
-    const checkSubmit = async (e) => {
+    const checkSubmit = (e) => {
         e.preventDefault();
         if (emailValid && passwordValid) {
-            try {
-                await auth.signInWithEmailAndPassword(email, password);
-                alert('User logged in successfully');
-            } catch (error) {
-                setError(error.message);
-            }
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    console.log('User signed in:', userCredential.user);
+                })
+                .catch((error) => {
+                    console.error('Error signing in:', error);
+                    setError(error.message);
+                });
         } else {
             console.log('Invalid input');
         }
@@ -74,56 +77,56 @@ export function LoginForm() {
 
     return (
         <section className='login'>
-        <form onSubmit={checkSubmit} noValidate className="form container">
-            <div className="container-fluid pb-1 mt-5 mb-5 login-div">
-                <h1 className="fw-bold">System Login</h1>
-                <div className="mb-3">
-                    <label htmlFor="Useremail" className="form-label lead">Email:</label>
-                    <input
-                        type="email"
-                        className={`form-control ${emailValid ? 'is-valid' : 'is-invalid'}`}
-                        id="Useremail"
-                        name="Useremail"
-                        placeholder="xx@xx.com"
-                        required
-                        value={email}
-                        onChange={handleEmailChange}
-                    />
-                    <div className={`${emailValid ? 'valid-feedback' : 'invalid-feedback'}`}>
-                        {emailFeedback}
+            <form onSubmit={checkSubmit} noValidate className="form container">
+                <div className="container-fluid pb-1 mt-5 mb-5 login-div">
+                    <h1 className="fw-bold">System Login</h1>
+                    <div className="mb-3">
+                        <label htmlFor="Useremail" className="form-label lead">Email:</label>
+                        <input
+                            type="email"
+                            className={`form-control ${emailValid ? 'is-valid' : 'is-invalid'}`}
+                            id="Useremail"
+                            name="Useremail"
+                            placeholder="xx@xx.com"
+                            required
+                            value={email}
+                            onChange={handleEmailChange}
+                        />
+                        <div className={`${emailValid ? 'valid-feedback' : 'invalid-feedback'}`}>
+                            {emailFeedback}
+                        </div>
                     </div>
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="Userpassword" className="form-label lead">Password:</label>
-                    <input
-                        type="password"
-                        className={`form-control ${passwordValid ? 'is-valid' : 'is-invalid'}`}
-                        id="Userpassword"
-                        name="Userpassword"
-                        required
-                        minLength={8}
-                        value={password}
-                        onChange={handlePasswordChange}
-                    />
-                    <div className={`${passwordValid ? 'valid-feedback' : 'invalid-feedback'}`}>
-                        {passwordFeedback}
+                    <div className="mb-3">
+                        <label htmlFor="Userpassword" className="form-label lead">Password:</label>
+                        <input
+                            type="password"
+                            className={`form-control ${passwordValid ? 'is-valid' : 'is-invalid'}`}
+                            id="Userpassword"
+                            name="Userpassword"
+                            required
+                            minLength={8}
+                            value={password}
+                            onChange={handlePasswordChange}
+                        />
+                        <div className={`${passwordValid ? 'valid-feedback' : 'invalid-feedback'}`}>
+                            {passwordFeedback}
+                        </div>
                     </div>
+                    <div className="text-center mt-5">
+                        <button
+                            className="w-50 btn btn-lg btn-primary btn-orange"
+                            type="submit"
+                            disabled={!emailValid || !passwordValid} 
+                        >
+                            Log in
+                        </button>
+                    </div>
+                    <div className="mt-3 mb-0 text-center">
+                        <p>Don't have an account? <NavLink to="/register" className="text-start text-lightorange">Register</NavLink></p>
+                    </div>
+                    {error && <p className="text-danger mt-3">{error}</p>}
                 </div>
-                <div className="text-center mt-5">
-                    <button
-                        className="w-50 btn btn-lg btn-primary btn-orange"
-                        type="submit"
-                        disabled={!emailValid || !passwordValid}
-                    >
-                        Log in
-                    </button>
-                </div>
-                {error && <p className="text-danger mt-3">{error}</p>}
-                <div className="mt-3 mb-0 text-center">
-                    <p>Don't have an account? <NavLink to="/register" className="text-start text-lightorange">Register</NavLink></p>
-                </div>
-            </div>
-        </form>
+            </form>
         </section>
     );
 }
