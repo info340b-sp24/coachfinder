@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { HomeDemo } from './homeDemo';
 
 import homeImage from '../img/home_main.jpeg';
@@ -34,9 +35,7 @@ export function HomeMain(props)
                         ))}
 
                         <p className='demo'>
-                            <a href="fake_login.html">
-                                Need More Demo? Please login!
-                            </a>
+                            <NavLink className="nav-link text-white nav-col-border" to="/login"> Need More Demo? Please login!</NavLink>
                         </p>
                     </div>
                 </div>
