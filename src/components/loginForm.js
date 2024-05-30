@@ -1,6 +1,6 @@
 // loginForm.js
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase/firebase.js';
 
@@ -12,6 +12,8 @@ export function LoginForm() {
     const [emailFeedback, setEmailFeedback] = useState('');
     const [passwordFeedback, setPasswordFeedback] = useState('');
     const [error, setError] = useState('');
+
+    const navigate = useNavigate(); 
 
     const validateEmail = (email) => {
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -65,6 +67,8 @@ export function LoginForm() {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     console.log('User signed in:', userCredential.user);
+                    alert("login successful");
+                    navigate("/ home");
                 })
                 .catch((error) => {
                     console.error('Error signing in:', error);

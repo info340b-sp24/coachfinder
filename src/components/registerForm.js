@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase/firebase.js';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export function RegisterForm() {
     const [email, setEmail] = useState('');
@@ -12,6 +13,8 @@ export function RegisterForm() {
     const [emailFeedback, setEmailFeedback] = useState('');
     const [passwordFeedback, setPasswordFeedback] = useState('');
     const [error, setError] = useState('');
+
+    const navigate = useNavigate(); 
 
     const validateEmail = (email) => {
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -67,6 +70,8 @@ export function RegisterForm() {
             createUserWithEmailAndPassword(auth, email, password1)
                 .then((userCredential) => {
                     console.log('User registered:', userCredential.user);
+                    alert("register successful");
+                    navigate("login /");
                 })
                 .catch((error) => {
                     console.error('Error registering:', error);
