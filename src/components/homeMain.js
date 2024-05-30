@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HomeDemo } from './homeDemo';
+import { auth } from '../firebase/firebase';
 
 import homeImage from '../img/home_main.jpeg';
 
 export function HomeMain(props)
 {
     const demoList = props.demoList;
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(user => {
+            setIsAuthenticated(!!user);
+        });
+
+        return () => unsubscribe();
+    }, []);
 
     return (
         <div className="home-main container">
@@ -33,10 +43,10 @@ export function HomeMain(props)
                         { demoList.map(demo => (
                             <HomeDemo demoData={demo} key={demo.id} />
                         ))}
-
-                        <p className='demo'>
+                        {isAuthenticated ? (<p></p>) : (
+                            <p className='demo'>
                             <NavLink className="nav-link text-white nav-col-border" to="/login"> Need More Demo? Please login!</NavLink>
-                        </p>
+                        </p>)}
                     </div>
                 </div>
             </div>
