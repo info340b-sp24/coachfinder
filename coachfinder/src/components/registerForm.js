@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { NavLink, Navigate } from 'react-router-dom';
 import { useAuth } from '../contexts/authContext';
 import { doCreateUserWithEmailAndPassword } from '../firebase/auth';
 
 export function RegisterForm() {
+    const { userLoggedIn } = useAuth();
     const [email, setEmail] = useState('');
     const [password1, setPassword1] = useState('');
     const [password2, setPassword2] = useState('');

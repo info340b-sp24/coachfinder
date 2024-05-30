@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function HomeComponent(props)
 {
-    const { currentUser } = useAuth()
+    // const { currentUser } = useAuth();
     return (
         <html>
             <head>
@@ -24,7 +24,8 @@ function HomeComponent(props)
 
                     <header className="home-header container-fluid text-white bg-white py-5"> 
                         <div className="container">
-                            <h1>Coach Appointment System For {currentUser.email}</h1>
+                            {/* <h1>Coach Appointment System For {currentUser.email}</h1> */}
+                            <h1>Coach Appointment System</h1>
                         </div>
                     </header>
 

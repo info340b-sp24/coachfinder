@@ -74,7 +74,7 @@ export function NavBar(props) {
                                 <NavLink className="nav-link text-white nav-col-border" to="/search"> Search</NavLink>
                             </li>
                             <li className="nav-item mx-2 nav-item-equalspace">
-                                <NavLink className="nav-link text-white nav-col-border" to="/coach"> Profile</NavLink>
+                                <NavLink className="nav-link text-white nav-col-border" to="/trainee"> Profile</NavLink>
                             </li>
                             <li className="nav-item mx-2 nav-item-equalspace">
                                 <NavLink className="nav-link text-white nav-col-border" to="/appointment"> Appointments</NavLink>
