@@ -1,4 +1,6 @@
+// registerForm.js
 import React, { useState } from 'react';
+import { auth } from './firebase';
 
 export function RegisterForm() {
     const [email, setEmail] = useState('');
@@ -8,6 +10,7 @@ export function RegisterForm() {
     const [passwordsMatch, setPasswordsMatch] = useState(false);
     const [emailFeedback, setEmailFeedback] = useState('');
     const [passwordFeedback, setPasswordFeedback] = useState('');
+    const [error, setError] = useState('');
 
     const validateEmail = (email) => {
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -57,11 +60,15 @@ export function RegisterForm() {
         setPasswordsMatch(validatePasswords(password1, val));
     };
 
-    const checkSubmit = (event) => {
+    const checkSubmit = async (event) => {
         event.preventDefault();
         if (emailValid && passwordsMatch) {
-            
-            
+            try {
+                await auth.createUserWithEmailAndPassword(email, password1);
+                alert('User registered successfully');
+            } catch (error) {
+                setError(error.message);
+            }
         } else {
             console.log('Invalid input');
         }
@@ -126,6 +133,7 @@ export function RegisterForm() {
                             Confirm
                         </button>
                     </div>
+                    {error && <p className="text-danger mt-3">{error}</p>}
                     <div className="mt-3 mb-0 text-center">
                         <p>Already have an account? <a href="login.js" className="text-start text-lightorange">Back to Login</a></p>
                     </div>

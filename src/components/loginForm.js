@@ -1,5 +1,7 @@
+// loginForm.js
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { auth } from './firebase';
 
 export function LoginForm() {
     const [email, setEmail] = useState('');
@@ -8,6 +10,7 @@ export function LoginForm() {
     const [passwordValid, setPasswordValid] = useState(false);
     const [emailFeedback, setEmailFeedback] = useState('');
     const [passwordFeedback, setPasswordFeedback] = useState('');
+    const [error, setError] = useState('');
 
     const validateEmail = (email) => {
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -55,11 +58,15 @@ export function LoginForm() {
         setPasswordValid(validatePassword(val));
     };
 
-    const checkSubmit = (e) => {
+    const checkSubmit = async (e) => {
         e.preventDefault();
         if (emailValid && passwordValid) {
-            console.log('Email:', email, 'Password:', password);
-            
+            try {
+                await auth.signInWithEmailAndPassword(email, password);
+                alert('User logged in successfully');
+            } catch (error) {
+                setError(error.message);
+            }
         } else {
             console.log('Invalid input');
         }
@@ -106,11 +113,12 @@ export function LoginForm() {
                     <button
                         className="w-50 btn btn-lg btn-primary btn-orange"
                         type="submit"
-                        disabled={!emailValid || !passwordValid} 
+                        disabled={!emailValid || !passwordValid}
                     >
                         Log in
                     </button>
                 </div>
+                {error && <p className="text-danger mt-3">{error}</p>}
                 <div className="mt-3 mb-0 text-center">
                     <p>Don't have an account? <NavLink to="/register" className="text-start text-lightorange">Register</NavLink></p>
                 </div>
