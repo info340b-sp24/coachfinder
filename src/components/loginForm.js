@@ -68,7 +68,7 @@ export function LoginForm() {
                 .then((userCredential) => {
                     console.log('User signed in:', userCredential.user);
                     alert("login successful");
-                    navigate("/ home");
+                    navigate("/homelogin");
                 })
                 .catch((error) => {
                     console.error('Error signing in:', error);

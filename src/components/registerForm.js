@@ -1,8 +1,7 @@
-// registerForm.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { NavLink, Navigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase/firebase.js';
-import { NavLink, useNavigate } from 'react-router-dom';
 
 export function RegisterForm() {
     const [email, setEmail] = useState('');
@@ -13,8 +12,7 @@ export function RegisterForm() {
     const [emailFeedback, setEmailFeedback] = useState('');
     const [passwordFeedback, setPasswordFeedback] = useState('');
     const [error, setError] = useState('');
-
-    const navigate = useNavigate(); 
+    const [success, setSuccess] = useState(false);
 
     const validateEmail = (email) => {
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -70,8 +68,7 @@ export function RegisterForm() {
             createUserWithEmailAndPassword(auth, email, password1)
                 .then((userCredential) => {
                     console.log('User registered:', userCredential.user);
-                    alert("register successful");
-                    navigate("login /");
+                    setSuccess(true);
                 })
                 .catch((error) => {
                     console.error('Error registering:', error);
@@ -81,6 +78,15 @@ export function RegisterForm() {
             console.log('Invalid input');
         }
     };
+
+    useEffect(() => {
+        if (success) {
+            const timer = setTimeout(() => {
+                window.location.href = 'login';
+            }, 3000);
+            return () => clearTimeout(timer);
+        }
+    }, [success]);
 
     return (
         <section className="register">
@@ -141,9 +147,10 @@ export function RegisterForm() {
                             Confirm
                         </button>
                     </div>
+                    {success && <p className="text-success mt-3">Registration successful! Redirecting to login...</p>}
                     {error && <p className="text-danger mt-3">{error}</p>}
                     <div className="mt-3 mb-0 text-center">
-                        <p>Already have an account? <a href="login.js" className="text-start text-lightorange">Back to Login</a></p>
+                        <p>Already have an account? <NavLink to="/login" className="text-start text-lightorange">Back to login</NavLink></p>
                     </div>
                 </div>
             </form>

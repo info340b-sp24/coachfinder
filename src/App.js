@@ -11,6 +11,7 @@ import MessageComponent from './components/Message';
 import CoachComponent from './components/coachProfile'
 import TraineeComponent from './components/traineeProfile'
 import { Routes, Route } from 'react-router-dom'
+import HomeLoginComponent from './components/homeLogin';
 
 function App(props) {
   return (
@@ -39,6 +40,7 @@ function App(props) {
           <Route path='message' element={<MessageComponent />} />
           <Route path='trainee' element={<TraineeComponent />} />
           <Route path='coach' element={<CoachComponent />} />
+          <Route path='homelogin' element={<HomeLoginComponent />} />
           <Route path='*' element={<HomeComponent />} />
         </Routes>
 
