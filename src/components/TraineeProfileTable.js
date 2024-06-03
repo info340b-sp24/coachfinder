@@ -7,6 +7,17 @@ export function TraineeProfileTable({ formData, handleChange }) {
   return (
     <div>
       <div className="mb-4">
+        <label htmlFor="nickname" className="form-label text-Kaushan text-white">Nickname</label>
+        <input
+          type="text"
+          className="form-control"
+          id="nickname"
+          value={formData.nickname}
+          onChange={handleChange}
+          placeholder="Enter your nickname"
+        />
+      </div>
+      <div className="mb-4">
         <label htmlFor="age" className="form-label text-Kaushan text-white">Age</label>
         <input
           type="number"
