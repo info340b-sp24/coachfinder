@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { SearchCard } from './searchCard';
@@ -58,7 +58,6 @@ export function SearchMain(props) {
                     />
                 </div>
 
-                {/* Filter Bar */}
                 <div className="row mb-5">
                     <div className="col-md-3">
                         <select name="specialty" className="form-select" value={filter.specialty} onChange={handleFilterChange}>

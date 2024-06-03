@@ -3,6 +3,10 @@ html {
     width: 100%;
 }
 
+.App {
+    text-align: center;
+}
+
 table {
     text-align: center;
 }
