@@ -1,24 +1,37 @@
 import React from 'react';
 import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Availability } from './AvailableTable'
+import { Availability } from './AvailableTable';
 
-export function TraineeProfileTable() {
+export function TraineeProfileTable({ formData, handleChange }) {
   return (
-    <form>
-        <div className="mb-4">
-            <label htmlForfor="age" className="form-label text-Kaushan text-white">Age</label>
-            <input type="number" className="form-control" id="age" placeholder="Enter your age" />
-        </div>
-        <div className="mb-4">
-            <label htmlForfor="sport" className="form-label text-Kaushan text-white">Sport / Event / Athletic Specialty</label>
-            <input type="text" className="form-control" id="sport" placeholder="Enter your specialty" />
-        </div>
-        <div className="mb-4">
-            <label className="form-label text-Kaushan">Availability</label>
-            < Availability />
-        </div>
-
-    </form>
-  )
+    <div>
+      <div className="mb-4">
+        <label htmlFor="age" className="form-label text-Kaushan text-white">Age</label>
+        <input
+          type="number"
+          className="form-control"
+          id="age"
+          value={formData.age}
+          onChange={handleChange}
+          placeholder="Enter your age"
+        />
+      </div>
+      <div className="mb-4">
+        <label htmlFor="sport" className="form-label text-Kaushan text-white">Sport / Event / Athletic Specialty</label>
+        <input
+          type="text"
+          className="form-control"
+          id="sport"
+          value={formData.sport}
+          onChange={handleChange}
+          placeholder="Enter your specialty"
+        />
+      </div>
+      <div className="mb-4">
+        <label className="form-label text-Kaushan text-white">Availability</label>
+        <Availability formData={formData} handleChange={handleChange} />
+      </div>
+    </div>
+  );
 }
