@@ -2,35 +2,13 @@
 
 This repository contains code for an interactive information web app, created for the _Client-Side Web Development_ course at the UW iSchool.
 
-Hi! I'm Vidhya Narayanan, one of the group members. here is my push to this repository.
 
-Hi! This is Muyun. Here is my push to the repo.
-
-Hi! This is Simon! Hello there!
-
-Hi! I'm Haobo Jiang. Here's my push to this repo!
+Group Member: Haobo Jiang, Simon Xiong, Muyun Xiao, Vidhya Narayanan
 
 
-
-Timeline for draft 2:
-
-Work distribution (individual work):
-Haobo Jiang: Turn home.html, searchpage.html into react components (by the end of week 7)
-Simon: Turn login.html, register.html into react components (by the end of week 7)
-Muyun Xiao: Turn coachprofile.html and traineeprofile.html into react components (by the end of week 7)
-Vidhya Narayanan: Turn appointmentscreen.html and message.html into react components (by the end of week 7)
-
-obstacles/blocks we may encounter:
-too many bugs that are difficult to be fixed, some react components may not be easy to be implemented
+Project Description:
+Our project is called coach finder. As the name suggests, users that are interested in keeping fit in the gym could login the website, search the coach that is the most suitable, schedule the coach, and update his/her profile. With this app, people have a place to find the coaches that they prefer and match them well. They do not have to worry that their lack of experience would negatively impact the effectiveness of the workout. They get to see various information about the ability and personality of the coach from more perspectives. In this case, users will have a chance to enhance their workout skills with the help of coaches and see the progress much easier.
 
 
-Timeline for the final draft:
-
-Work distribution (individual work):
-Haobo Jiang: filter feature of searchPage, and responsible for the firebase.
-Simon: login and register features.
-Muyun Xiao: profile features (filter mainly).
-Vidhya Narayanan: message and appointment features (chat, etc).
-
-Obstacles/blocks we may encounter:
-too many bugs regarding with interacting features, and firebase could not be deployed correctly.
+Firebase Website:
+coachfinder-4563c.firebaseapp.com
