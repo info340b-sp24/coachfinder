@@ -11,4 +11,4 @@ Our project is called coach finder. As the name suggests, users that are interes
 
 
 Firebase Website:
-coachfinder-4563c.firebaseapp.com
+[coachfinder-4563c.firebaseapp.com](https://coachfinder-4563c.firebaseapp.com/)
