@@ -10,5 +10,15 @@ Project Description:
 Our project is called coach finder. As the name suggests, users that are interested in keeping fit in the gym could login the website, search the coach that is the most suitable, schedule the coach, and update his/her profile. With this app, people have a place to find the coaches that they prefer and match them well. They do not have to worry that their lack of experience would negatively impact the effectiveness of the workout. They get to see various information about the ability and personality of the coach from more perspectives. In this case, users will have a chance to enhance their workout skills with the help of coaches and see the progress much easier.
 
 
+Features:
+1.login, logout, and register
+
+2.filter the coach information based on name, specialty, gender, minimum price, and maximum price in the search page
+
+3.schedule and unschedule the coaches in the search page
+
+4.user profile update and connect with firebase
+
+
 Firebase Website:
 [coachfinder-4563c.firebaseapp.com](https://coachfinder-4563c.firebaseapp.com/)
